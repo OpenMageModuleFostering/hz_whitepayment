@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>HZ_Whitepayment</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license>GNU General Public License (GPL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>White payment gateway for credit card processing.</summary>
+    <description>White payment gateway for credit card processing.</description>
+    <notes>White payment gateway for credit card processing.</notes>
+    <authors><author><name>Mohammad Harun-Or-Rashid</name><user>harun</user><email>harun.zend@gmail.com</email></author></authors>
+    <date>2014-12-24</date>
+    <time>05:22:13</time>
+    <contents><target name="mageetc"><dir name="modules"><file name="HZ_Whitepayment.xml" hash="ff197954d06c14837706f0da351c7576"/></dir></target><target name="magecommunity"><dir name="HZ"><dir name="Whitepayment"><dir name="Model"><dir name="Adminhtml"><dir name="System"><dir name="Config"><dir name="Source"><file name="Transmethod.php" hash="1288e5ed41a5a6ac861dcda48b273269"/></dir></dir></dir></dir><file name="Observer.php" hash="86450523f214f15f49aee5c013e58d3a"/><file name="Whitepayment.php" hash="14862ed67414a15ad2313ff4168f175e"/></dir><dir name="etc"><file name="config.xml" hash="d369bc87d7bd68500e7ec2c6f5005156"/><file name="system.xml" hash="fcc09041a878be424415e55e9a660331"/></dir></dir></dir></target><target name="magelib"><dir name="White"><file name="ca-certificates.crt" hash="79d6c3280390562852dfc80759cc526e"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

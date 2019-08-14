@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * NOTICE OF LICENSE
+ *
+ * @category	Whitepayment
+ * @package		HZ_Whitepayment
+ * @author		Whitepayment.
+ * @license		http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+ -->
+<config>
+	<modules>
+        <HZ_Whitepayment>
+            <version>1.0.0</version>
+        </HZ_Whitepayment>
+    </modules>
+	<frontend>
+		<events>  
+			<payment_method_is_active>
+				<observers>
+					<whitepayment>
+						<type>singleton</type>
+						<class>HZ_Whitepayment_Model_Observer</class>
+						<method>disableMethod</method>
+					</whitepayment>
+				</observers>
+			</payment_method_is_active>
+		</events>
+	</frontend>
+	<global>
+		<models>
+			<whitepayment>
+                <class>HZ_Whitepayment_Model</class>
+            </whitepayment>
+		</models>
+	</global>
+	<default>
+        <payment>
+            <whitepayment>
+                <active>0</active>
+                <title>Credit Card (White)</title>
+				<order_status>pending</order_status>
+				<cctypes>AE,VI,MC</cctypes>
+				<useccv>1</useccv>
+				<allowspecific>0</allowspecific>
+				<test>1</test>
+				<debug>0</debug>
+				<payment_action>authorize_capture</payment_action>
+				<model>whitepayment/whitepayment</model>
+            </whitepayment>
+        </payment>
+    </default>
+</config>
