@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/HZ_Whitepayment",
+    "name": "OpenMageModuleFostering\/HZ_Whitepayment",
     "type": "magento-module",
     "license": "GNU-General-Public-License-(GPL)",
     "homepage": "",
     "description": "White payment gateway for credit card processing.",
     "authors": [
-    {
-        "name": "Mohammad Harun-Or-Rashid",
-        "email": "harun.zend@gmail.com"
-    }
-],
+        {
+            "name": "Mohammad Harun-Or-Rashid",
+            "email": "harun.zend@gmail.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
